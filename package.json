@@ -1,0 +1,23 @@
+{
+  "name": "my-slide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build --no-html deck.mdx & cpx \"images/*\" ./dist/images",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "gh-pages": "^2.0.1",
+    "mdx-deck": "^1.8.0",
+    "mdx-deck-code-surfer": "^0.5.3",
+    "raw-loader": "^1.0.0",
+    "react-syntax-highlighter": "^9.0.1"
+  },
+  "dependencies": {}
+}

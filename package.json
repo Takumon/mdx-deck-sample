@@ -6,6 +6,7 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build --no-html deck.mdx & cpx \"images/*\" ./dist/images",
+    "pdf": "mdx-deck pdf deck.mdx",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

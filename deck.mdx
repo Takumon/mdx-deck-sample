@@ -65,21 +65,38 @@ export default LayoutAlignCenter
 
 ---
 
-// TODO 導入文を記載
+ここから本題
 
 ---
-export default Split
+export default LayoutMarkdown
 
-![images/mdx-deck-logo.png](./images/mdx-deck-logo.png)
-
-### [MDX](https://github.com/mdx-js/mdx)ベースのスライド作成ライブラリ
-
+##  スライド作成ツールはいろいろあるけれど...
 <hr/>
 <br/>
 
-* MDXはマークダウンにReactコンポーネントが書けるようにしたもの（Markdown + JSX）
-* 設定ファイルなしでMDXファイルだけでスライドが作れる
-* Reactコンポーネントでリッチなスライドが作れる
+* PowerPoint
+* Keynote
+* [Reveal.js](https://revealjs.com/)
+* [Remark.js](https://remarkjs.com/)
+
+---
+
+#### MDX-DECKは[MDX](https://github.com/mdx-js/mdx)ベースのスライド作成Node.jsライブラリ
+
+![mdx-deck-demo](./images/mdx-deck-demo.gif)
+
+---
+export default LayoutMarkdown
+
+##  MDX-DECKとは
+<hr/>
+<br/>
+
+1. [MDX](https://github.com/mdx-js/mdx)ベースのスライド作成ライブラリ
+1.  設定ファイルなしでMDXファイルだけでスライドが作れる
+1. MDXはMarkdownにJSXを書けるようにしたもの
+1. Reactコンポーネントの力を借りてリッチなスライドが作れる
+1. 強力なソースコードプレビュー用プラグイン(Code-Surfer)が用意されている
 
 
 ---
@@ -482,7 +499,7 @@ export default LayoutMarkdown
 
 ### 🏄 CODE-SURFER
 * MDX-DECKのプラグイン
-* ソースコードプレブーをリッチにしてくれる
+* ソースコードプレビューをリッチにしてくれる
 
 <Appear>
 <h1>MDX-DECKとCode Suferでスライドを作ろう！</h1>

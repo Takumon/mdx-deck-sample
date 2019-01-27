@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 export default class Counter extends React.Component {
   state = {
@@ -14,45 +15,41 @@ export default class Counter extends React.Component {
   }
 
   render() {
+
+    const Wrapper = styled.div`
+      width: 100%;
+      display: flex;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1b1b1b;
+      border-radius: 4px;
+      border: 1px solid white;
+      padding: 2rem;
+    `
+
+    const Btn = styled.div`
+      appearance: none;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: bold;
+      border-radius: 4px;
+      border: none;
+      width: 2em;
+      cursor: pointer;
+      border: 1px solid white;
+    `
+    const Count = styled.div`
+      margin: 1rem;
+    `
+
     return (
-      <div style={{
-        width: '100%',
-        display: 'flex',
-        alignItems: 'center',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: '#1b1b1b',
-        borderRadius: '4px',
-        border: '1px solid white',
-        padding: '2rem',
-        }}>
-        <div style={{
-            appearance: 'none',
-            fontFamily: 'inherit',
-            fontSize: 'inherit',
-            fontWeight: 'bold',
-            borderRadius: '4px',
-            border: 'none',
-            width: '2em',
-            cursor: 'pointer',
-            border: '1px solid white',
-        }} ml='auto' onClick={this.dec}>-</div>
-        <div style={{
-            margin: '1rem'
-        }}>{this.state.count}</div>
-        <div style={{
-            appearance: 'none',
-            fontFamily: 'inherit',
-            fontSize: 'inherit',
-            fontWeight: 'bold',
-            borderRadius: '4px',
-            border: 'none',
-            width: '2em',
-            cursor: 'pointer',
-            border: '1px solid white',
-        }} mr='auto' onClick={this.inc}>+</div>
-      </div>
+      <Wrapper>
+        <Btn ml='auto' onClick={this.dec}>-</Btn>
+        <Count>{this.state.count}</Count>
+        <Btn ml='auto' onClick={this.inc}>+</Btn>
+      </Wrapper>
     )
   }
 }

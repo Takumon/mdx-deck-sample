@@ -1,6 +1,6 @@
 {
-  "name": "my-slide",
-  "version": "1.0.0",
+  "name": "mdx-deck-presentation",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "cpx": "^1.5.0",
+    "file-loader": "^3.0.1",
     "gh-pages": "^2.0.1",
     "mdx-deck": "^1.8.0",
     "mdx-deck-code-surfer": "^0.5.3",
     "raw-loader": "^1.0.0",
     "react-syntax-highlighter": "^9.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@glorious/demo": "^0.8.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.1.3"
+  }
 }

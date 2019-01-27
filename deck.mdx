@@ -17,11 +17,6 @@ import {
 
 <Head>
   <title>mdx-deckとcode-suferでスライドを作ろう！</title>
-  <meta name='twitter:card' content='summary_large_image' />
-  <meta name='twitter:site' content='@inouetakumon' />
-  <meta name='twitter:title' content='mdx-deckとcode-suferでスライドを作ろう！' />
-  <meta name='twitter:description' content='mdx-deckとcode-suferはMDXをベースとしたグラフィカルなスライドが作れるライブラリです。' />
-  <meta name='twitter:image' content='./images/mdx-deck-background.png' />
 </Head>
 
 
@@ -42,6 +37,8 @@ import {
 
 ### 自己紹介
 <hr/>
+<br/>
+
 
 <img src="./images/avater.jpg" alt="たくもんのアイコン" style={{borderRadius: '50%', margin: '12px 42px -24px 0' }} />
 
@@ -53,18 +50,22 @@ import {
 ---
 export default LayoutAlignCenter
 
-<IFRAME src={'https://takumon.com'} ></IFRAME>
+### [Takumon Blog :tomato:](https://takumon.com)
 
+<small>ブログはGatsbyJS製。週１で更新してます。</small>
+
+<iframe 
+  style={{
+    width: '90vw',
+    height: '75vh',
+    background: 'white',
+  }}
+  src={'https://takumon.com'}
+  ></iframe>
 
 ---
 
-export default LayoutAlignCenter
-
-<BGImage  opacity={0.6} src={require("file-loader!./images/sample-background.jpg")}/>
-
-
-# MDX-DECK
-#### でスライドを作ろう！！
+// TODO 導入文を記載
 
 ---
 export default Split
@@ -74,6 +75,7 @@ export default Split
 ### [MDX](https://github.com/mdx-js/mdx)ベースのスライド作成ライブラリ
 
 <hr/>
+<br/>
 
 * MDXはマークダウンにReactコンポーネントが書けるようにしたもの（Markdown + JSX）
 * 設定ファイルなしでMDXファイルだけでスライドが作れる
@@ -87,6 +89,8 @@ export default LayoutMarkdown
 ## [MDX](https://github.com/mdx-js/mdx)ファイル１つ作ればスライドが完成
 
 <hr/>
+<br/>
+
 
 1. npm i -D mdx-deck
 1. MDXファイル作成
@@ -142,8 +146,10 @@ export { dark as theme } from 'mdx-deck/themes'
 ---
 export default LayoutMarkdown
 
-## スライド用のコンポーネント
+## 🔧 スライド用のコンポーネント
 <hr/>
+<br/>
+
 
 1. 画像の全画面表示
 1. 左右分割レイアウト
@@ -346,11 +352,6 @@ import { Appear } from 'mdx-deck'
 import { Head } from 'mdx-deck'
 <Head>
   <title>mdx-deckとcode-suferでスライドを作ろう！</title>
-  <meta name='twitter:card' content='summary_large_image' />
-  <meta name='twitter:site' content='@inouetakumon' />
-  <meta name='twitter:title' content='mdx-deckとcode-suferでスライドを作ろう！' />
-  <meta name='twitter:description' content='mdx-deckとcode-suferは...' />
-  <meta name='twitter:image' content='card.png' />
 </Head>
 ```
 
@@ -358,13 +359,14 @@ import { Head } from 'mdx-deck'
 
 ---
 
-// TODO Twitter Card画像貼り付け
+![head-preview](./images/head-preview.png)
 
 ---
 export default LayoutMarkdown
 
-## プレゼンテーション機能
+## 🎬 プレゼンテーション機能
 <hr/>
+<br/>
 
 * 💁🏻‍♂️ プレゼンモード `Option + P`
 * 📓 オーバービューモード `Option + O`
@@ -390,19 +392,6 @@ export default LayoutMarkdown
 <Counter />
 
 
-
-
-
-
----
-
-export default LayoutAlignCenter
-
-<BGImage  opacity={0.6} src={require("file-loader!./images/sample-background.jpg")}/>
-
-
-# MDX-DECK + CODE-SURFER
-#### でスライドを作ろう！！
 ---
 
 export default Split
@@ -410,14 +399,14 @@ export default Split
 
 ![images/code-surfer-logo.png](./images/code-surfer-logo.png)
 
-## MDX-DECKのプラグイン🏄
-
+## 🏄 MDX-DECKのプラグイン
 <hr/>
+<br/>
 
 * ソースコードプレビューをリッチにしてくれる
-* 大量のコードでも、説明したい箇所をズームできる
-* アニメーションを指定でき、アニメーションごとに説明文を設けられる
-* 参考：https://github.com/pomber/code-surfer
+* 大量のコードでも説明したい箇所をズームにできる
+* アニメーションを指定できる
+* アニメーションごとに説明文を付けられる
 
 
 ---
@@ -447,7 +436,6 @@ export default Split
 
 export default LayoutAlignCenter
 
-
 ### [mdx-deck-live-code 🤯](https://github.com/JReinhold/mdx-deck-live-code)
 
 <small>Reactコンポーネントのライブコーディングができるプラグイン</small>
@@ -466,13 +454,14 @@ export default LayoutAlignCenter
 
 export default LayoutMarkdown
 
-## 使ってみた感想
+## 🚂 使ってみた感想
 <hr/>
+<br/>
 
 ### ✨ Good !!
 * 簡単なスライドはMDXファイル１つで作れる
 * 良く使うデザインはReactコンポーネントとして共通化できる
-* 全資産をNode.jsで管理できるの
+* 全資産をNode.jsで管理できる
 
 ### 🤔 Uhnnn...
 * 凝ったデザインにするにはテーマの調整（CSS）が必要
@@ -505,4 +494,18 @@ export default LayoutMarkdown
 ##### 🙇 ご清聴ありがとうございました 🙇
 ###### このスライドのソースは[コチラ](https://github.com/Takumon/mdx-deck-sample)
 
+
+---
+
+export default LayoutMarkdown
+
+## 📋 参考資料
+
+##### ・ [MDX](https://mdxjs.com/)
+##### ・ [jxnblk/mdx-deck: MDX-based presentation decks](https://github.com/jxnblk/mdx-deck)
+##### ・ [JReinhold/mdx-deck-live-code: A component for mdx-deck to live code in your slides. 🤯](https://github.com/JReinhold/mdx-deck-live-code)
+##### ・ [pomber/code-surfer: React component for scrolling, zooming and highlighting code samples <🏄/>](https://github.com/pomber/code-surfer)
+##### ・ [kentcdodds/simply-react](https://github.com/kentcdodds/simply-react)
+##### ・ [SaraVieira/99-problems-graphql-aint-one: Talk for LvivJS 2018](https://github.com/SaraVieira/99-problems-graphql-aint-one)
+##### ・ [Highlight, Scroll, & Zoom Code Snippets in mdx-deck with Code Surfer <🏄/> · Manorisms](https://elijahmanor.com/code-surfer/)
 

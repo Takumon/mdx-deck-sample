@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.main`
   width: 100vw;
   height: 100vh;
+  padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;

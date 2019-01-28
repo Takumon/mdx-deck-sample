@@ -16,43 +16,51 @@ import {
 
 
 <Head>
-  <title>mdx-deckとcode-suferでスライドを作ろう！</title>
+  <title>mdx-deckとcode-surferでスライドを作ろう！</title>
 </Head>
 
 
 <h1>
-  <span>MDX-DECK</span><Sm>と</Sm><span>Code Sufer</span><Sm>で</Sm><br/>
+  <span>MDX-DECK</span><Sm>と</Sm><span>Code Surfer</span><Sm>で</Sm><br/>
   <span>スライドを作ろう！</span>
 </h1>
 
 <hr/>
 
-###### [@inouetakumon](https://twitter.com/inouetakumon):tomato:
+##### [@inouetakumon](https://twitter.com/inouetakumon):tomato:
 
 ###### このスライドのソースは[コチラ](https://github.com/Takumon/mdx-deck-sample)
 
 <hr/>
 
 ---
+export default LayoutAlignCenter
 
 ### 自己紹介
 <hr/>
-<br/>
 
+<img src="./images/avater.jpg" alt="たくもんのアイコン" style={{
+  borderRadius: '50%',
+  width: '13rem',
+  height: '13rem',
+  margin: '1rem',
+  float: 'left',
+  display: 'block',
+}} />
 
-<img src="./images/avater.jpg" alt="たくもんのアイコン" style={{borderRadius: '50%', margin: '12px 42px -24px 0' }} />
 
 * 名前：たくもん（[@inouetakumon](https://twitter.com/inouetakumon)）
 * 仕事：SIer
 * 言語：Java、JavaScript
 * 趣味：ブログ（[https://takumon.com](https://takumon.com)）
 
+
 ---
 export default LayoutAlignCenter
 
-### [Takumon Blog :tomato:](https://takumon.com)
+### [たくもんブログ :tomato:](https://takumon.com)
 
-<small>ブログはGatsbyJS製。週１で更新してます。</small>
+<small>GatsbyJS製。週１で更新してます。</small>
 
 <iframe 
   style={{
@@ -71,8 +79,6 @@ export default LayoutAlignCenter
 export default LayoutMarkdown
 
 ##  スライド作成ツールはいろいろあるけれど...
-<hr/>
-<br/>
 
 * PowerPoint
 * Keynote
@@ -81,18 +87,33 @@ export default LayoutMarkdown
 
 ---
 
-#### MDX-DECKは[MDX](https://github.com/mdx-js/mdx)ベースのスライド作成Node.jsライブラリ
+export default Invert
 
-![mdx-deck-demo](./images/mdx-deck-demo.gif)
+# 選択肢の1つとして
+
+<br/>
+
+
+<img src="./images/mdx-deck-logo.png" style={{maxHeight:'60vh', maxWidth: '60vw',  objectFit: 'contain'}}/>
+
+<br/>
+
+# いかがでしょうか！
+
+
+---
+export default LayoutAlignCenter
+
+#### MDX-DECKは[MDX](https://github.com/mdx-js/mdx)ベースのスライド作成用Node.jsライブラリ
+
+<img src="./images/mdx-deck-demo.gif" style={{maxHeight:'80vh', maxWidth: '90vw',  objectFit: 'contain'}}/>
 
 ---
 export default LayoutMarkdown
 
 ##  MDX-DECKとは
-<hr/>
-<br/>
 
-1. [MDX](https://github.com/mdx-js/mdx)ベースのスライド作成ライブラリ
+1. [MDX](https://github.com/mdx-js/mdx)ベースのスライド作成用Node.jsライブラリ
 1.  設定ファイルなしでMDXファイルだけでスライドが作れる
 1. MDXはMarkdownにJSXを書けるようにしたもの
 1. Reactコンポーネントの力を借りてリッチなスライドが作れる
@@ -104,10 +125,6 @@ export default LayoutMarkdown
 export default LayoutMarkdown
 
 ## [MDX](https://github.com/mdx-js/mdx)ファイル１つ作ればスライドが完成
-
-<hr/>
-<br/>
-
 
 1. npm i -D mdx-deck
 1. MDXファイル作成
@@ -164,9 +181,6 @@ export { dark as theme } from 'mdx-deck/themes'
 export default LayoutMarkdown
 
 ## 🔧 スライド用のコンポーネント
-<hr/>
-<br/>
-
 
 1. 画像の全画面表示
 1. 左右分割レイアウト
@@ -179,7 +193,7 @@ export default LayoutMarkdown
 
 export default LayoutAlignCenter
 
-## `Image`：画像の全画面表示 
+### `Image`：画像の全画面表示 
 
 ```jsx
 import { Image } from 'mdx-deck'
@@ -198,7 +212,7 @@ import { Image } from 'mdx-deck'
 
 export default LayoutAlignCenter
 
-## `Split`：左右分割レイアウト
+### `Split`：左右分割レイアウト
 
 ```jsx
 import { Split } from 'mdx-deck/layouts'
@@ -207,7 +221,7 @@ export default Split
 ![images/sample-background.jpg](./images/sample-background.jpg)
 
 
-## スプリットレイアウト
+### スプリットレイアウト
 ほげほげふがふがぴよぴよ
 ```
 
@@ -218,7 +232,7 @@ export default Split
 
 ![images/sample-background.jpg](./images/sample-background.jpg)
 
-## スプリットレイアウト
+### スプリットレイアウト
 
 ほげほげふがふがぴよぴよ
 
@@ -230,7 +244,7 @@ export default Split
 
 export default LayoutAlignCenter
 
-## `Horizontal`：横並びレイアウト
+### `Horizontal`：横並びレイアウト
 
 ```jsx
 import { Horizontal} from 'mdx-deck/layouts'
@@ -263,7 +277,7 @@ export default Horizontal
 
 export default LayoutAlignCenter
 
-## `Invert`：色反転レイアウト
+### `Invert`：色反転レイアウト
 
 ```jsx
 import { Invert} from 'mdx-deck/layouts'
@@ -291,7 +305,10 @@ export default Invert
 
 ---
 
-## `FullScreenCode`：ソースコードの全画面表示
+export default LayoutAlignCenter
+
+
+### `FullScreenCode`：ソースコードの全画面表示
 
 ````jsx
 import { FullScreenCode } from 'mdx-deck/layouts'
@@ -329,8 +346,9 @@ import Box from 'superbox'
 
 
 ---
+export default LayoutAlignCenter
 
-## `Appear`：アニメーション
+### `Appear`：アニメーション
 
 ```jsx
 import { Appear } from 'mdx-deck'
@@ -349,9 +367,9 @@ import { Appear } from 'mdx-deck'
 #### プレビューは次ページ:arrow_right:
 ---
 
-## `Appear`
+### `Appear`
 
-<ul>
+<ul style={{textAlign: 'left'}}>
   <Appear>
     <li>ほっぷ🐣</li>
     <li>すてっぷ🐤</li>
@@ -363,12 +381,12 @@ import { Appear } from 'mdx-deck'
 
 ---
 
-## `Headタグ`：メタ情報埋め込み
+### `Head`：メタ情報埋め込み
 
 ```jsx
 import { Head } from 'mdx-deck'
 <Head>
-  <title>mdx-deckとcode-suferでスライドを作ろう！</title>
+  <title>mdx-deckとcode-surferでスライドを作ろう！</title>
 </Head>
 ```
 
@@ -382,8 +400,6 @@ import { Head } from 'mdx-deck'
 export default LayoutMarkdown
 
 ## 🎬 プレゼンテーション機能
-<hr/>
-<br/>
 
 * 💁🏻‍♂️ プレゼンモード `Option + P`
 * 📓 オーバービューモード `Option + O`
@@ -401,34 +417,44 @@ export default LayoutMarkdown
 
 
 ---
+export default LayoutAlignCenter
 
-## 自作Reactコンポーネントも埋め込める
+## 🔧 自作Reactコンポーネントも埋め込める
 
-スライドでよく使う部品をコンポーネント化して再利用できる
+* よく使う部品やアニメーションをコンポーネント化して再利用できる
 
 <Counter />
 
 
 ---
+export default Invert
 
-export default Split
+# MDX-DECKのプラグインのご紹介
 
-
-![images/code-surfer-logo.png](./images/code-surfer-logo.png)
-
-## 🏄 MDX-DECKのプラグイン
-<hr/>
 <br/>
 
+<img src="./images/code-surfer-logo.png" style={{maxHeight:'60vh', maxWidth: '60vw',  objectFit: 'contain'}}/>
+
+<br/>
+
+# 
+
+---
+export default LayoutMarkdown
+
+##  <🏄/> Code-Surferとは
+
+* MDX-DECKのプラグイン
 * ソースコードプレビューをリッチにしてくれる
-* 大量のコードでも説明したい箇所をズームにできる
-* アニメーションを指定できる
-* アニメーションごとに説明文を付けられる
+* 大量のコードでもズーム＆スクロールなどのアニメーションができる
+* アニメーションごとに説明文が設定できる
 
 
 ---
+export default LayoutAlignCenter
+
 <CodeSurfer
-  title="Code Surferでできること"
+  title={()=>(<h3>Code-Surferデモでできること</h3>)}
   code={require("!raw-loader!./snippets/my-snippet.js")}
   showNumbers={true}
   theme={nightOwl}
@@ -436,14 +462,14 @@ export default Split
   dark={true}
   steps={[
     { notes: ''},
-    { lines: [13], notes: ()=>(<h2>1. linesで行をハイライト＆ズームできます。</h2>)},
-    { lines: [15], notes: ()=>(<h2>2. rangeで範囲指定も可能です。</h2>) },
-    { range: [5, 10], notes: ()=>(<h2>こんな感じ😀</h2>) },
-    { lines: [17], notes: ()=>(<h2>3. tokensで単語文字に絞ることも可能です。</h2>) },
-    { tokens: {17: [18] }, notes: ()=>(<h2>こんな感じ😁</h2>) },
-    { lines: [6], notes: ()=>(<h2>4. row-loaderと併用して他ファイルからコードを読み込んだり ...</h2>) },
-    { lines: [7], notes: ()=>(<h2>5. 行番号を振ったり ...</h2>) },
-    { lines: [8], notes: ()=>(<h2>8. テーマ指定も可能です！　参考：https://code-surfer.netlify.com/theming</h2>) },
+    { lines: [13], notes: ()=>(<h3>linesで行をハイライト＆ズームできます。</h3>)},
+    { lines: [15], notes: ()=>(<h3>rangeで範囲指定も可能です。</h3>) },
+    { range: [5, 10], notes: ()=>(<h3>こんな感じ😀</h3>) },
+    { lines: [17], notes: ()=>(<h3>tokensで単語文字に絞ることも可能です。</h3>) },
+    { tokens: {17: [18] }, notes: ()=>(<h3>こんな感じ😁</h3>) },
+    { lines: [6], notes: ()=>(<h3>他ファイルからコードを読み込んだり ...</h3>) },
+    { lines: [7], notes: ()=>(<h3>行番号を振ったり ...</h3>) },
+    { lines: [8], notes: ()=>(<h3>テーマ指定も可能です！</h3>) },
     { notes: ''},
   ]}
 />
@@ -453,7 +479,7 @@ export default Split
 
 export default LayoutAlignCenter
 
-### [mdx-deck-live-code 🤯](https://github.com/JReinhold/mdx-deck-live-code)
+### [mdx-deck-live-code](https://github.com/JReinhold/mdx-deck-live-code)
 
 <small>Reactコンポーネントのライブコーディングができるプラグイン</small>
 
@@ -472,8 +498,6 @@ export default LayoutAlignCenter
 export default LayoutMarkdown
 
 ## 🚂 使ってみた感想
-<hr/>
-<br/>
 
 ### ✨ Good !!
 * 簡単なスライドはMDXファイル１つで作れる
@@ -489,8 +513,6 @@ export default LayoutMarkdown
 export default LayoutMarkdown
 
 ## 👨‍👩‍👦‍👦  まとめ
-<hr/>
-<br/>
 
 ### 📓 MDX-DECK
 * MDXファイルを作るだけで簡単にスライドが作成できる
@@ -501,11 +523,8 @@ export default LayoutMarkdown
 * MDX-DECKのプラグイン
 * ソースコードプレビューをリッチにしてくれる
 
-<Appear>
-<h1>MDX-DECKとCode Suferでスライドを作ろう！</h1>
-</Appear>
-
 ---
+
 # :tomato:おしまい:tomato:
 
 ##### 🙇 ご清聴ありがとうございました 🙇
@@ -518,11 +537,11 @@ export default LayoutMarkdown
 
 ## 📋 参考資料
 
-##### ・ [MDX](https://mdxjs.com/)
-##### ・ [jxnblk/mdx-deck: MDX-based presentation decks](https://github.com/jxnblk/mdx-deck)
-##### ・ [JReinhold/mdx-deck-live-code: A component for mdx-deck to live code in your slides. 🤯](https://github.com/JReinhold/mdx-deck-live-code)
-##### ・ [pomber/code-surfer: React component for scrolling, zooming and highlighting code samples <🏄/>](https://github.com/pomber/code-surfer)
-##### ・ [kentcdodds/simply-react](https://github.com/kentcdodds/simply-react)
-##### ・ [SaraVieira/99-problems-graphql-aint-one: Talk for LvivJS 2018](https://github.com/SaraVieira/99-problems-graphql-aint-one)
-##### ・ [Highlight, Scroll, & Zoom Code Snippets in mdx-deck with Code Surfer <🏄/> · Manorisms](https://elijahmanor.com/code-surfer/)
+* [MDX](https://mdxjs.com/)
+* [jxnblk/mdx-deck: MDX-based presentation decks](https://github.com/jxnblk/mdx-deck)
+* [JReinhold/mdx-deck-live-code: A component for mdx-deck to live code in your slides. 🤯](https://github.com/JReinhold/mdx-deck-live-code)
+* [pomber/code-surfer: React component for scrolling, zooming and highlighting code samples <🏄/>](https://github.com/pomber/code-surfer)
+* [kentcdodds/simply-react](https://github.com/kentcdodds/simply-react)
+* [SaraVieira/99-problems-graphql-aint-one: Talk for LvivJS 2018](https://github.com/SaraVieira/99-problems-graphql-aint-one)
+* [Highlight, Scroll, & Zoom Code Snippets in mdx-deck with Code Surfer <🏄/> · Manorisms](https://elijahmanor.com/code-surfer/)
 

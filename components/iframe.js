@@ -8,8 +8,8 @@ import styled from 'styled-components'
 
 const IFRAME = ({ src, height = '97vh', width = '100vw'}) => {
     const IframeElement = styled.iframe`
-        width: ${width};
-        height: ${height};
+        max-width: ${width};
+        max-height: ${height};
         margin-left: -50vw;
         position: absolute;
         top: 0;

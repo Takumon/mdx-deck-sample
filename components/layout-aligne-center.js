@@ -10,6 +10,19 @@ const Wrapper = styled.main`
   flex-direction: row;
   justify-content: center;
   position: relative;
+
+  pre {
+    max-width: 90vw;
+    max-height: 80vh;
+    font-size: 0.8rem;
+
+    @media screen and (min-width:480px) and (min-height: 270px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-width:1020px) and (min-height: 830px) {
+      font-size: 1.8rem;
+    }
+  }
 `
 
 const LayoutAlignCenter = ({ children }) => <Wrapper>{children}</Wrapper>

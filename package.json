@@ -6,9 +6,9 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build --no-html deck.mdx & cpx \"images/*\" ./dist/images",
-    "pdf": "mdx-deck pdf deck.mdx",
-    "deploy": "gh-pages -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pdf": "mdx-deck pdf --width 1377 --height 756 deck.mdx",
+    "screenshot": "mdx-deck screenshot --width 1200 --height 630 deck.mdx",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "MIT",

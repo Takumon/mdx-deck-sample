@@ -13,19 +13,19 @@ export default {
     textTransform: 'uppercase',
     fontWeight: 600,
     fontSize: '1.5rem',
-    '@media screen and (min-width:480px)': {
+    '@media screen and (min-width:480px) and (min-height: 270px)': {
       fontSize: '2.5rem',
     },
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '4rem',
     }
   },
   h2: {
     fontSize: '1.3rem',
-    '@media screen and (min-width:480px)': {
+    '@media screen and (min-width:480px) and (min-height: 270px)': {
       fontSize: '2rem',
     },
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '3rem',
     },
     textAlign: 'left',
@@ -35,31 +35,32 @@ export default {
   },
   h3: {
     fontSize: '1.1rem',
-    '@media screen and (min-width:480px)': {
+    '@media screen and (min-width:480px) and (min-height: 270px)': {
       fontSize: '1.5rem',
     },
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '2.5rem',
     }
   },
   h4: {
     fontSize: '1.1rem',
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '2.1rem',
     }
   },
   h5: {
     fontSize: '0.6rem',
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '1.4rem',
     }
   },
   h6: {
     fontSize: '0.5rem',
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '1rem',
     }
   },
+  transitionDuration: 0,
   ul: {
     textAlign: 'left',
     listStyleType: 'disc',
@@ -67,14 +68,14 @@ export default {
     marginTop: '0.3rem',
     marginBottom: '1.3rem',
     display: 'inline-block',
-    '@media screen and (min-width:480px)': {
+    '@media screen and (min-width:480px) and (min-height: 270px)': {
       fontSize: '1.2rem',
       paddingLeft: '1.5rem',
       marginTop: '0.8rem',
       marginBottom: '2rem',
 
     },
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '1rem',
       paddingLeft: '2rem',
       marginTop: '1rem',
@@ -84,11 +85,11 @@ export default {
   li: {
     fontSize: '1rem',
     lineHeight: '1.5rem',
-    '@media screen and (min-width:480px)': {
+    '@media screen and (min-width:480px) and (min-height: 270px)': {
       lineHeight: '2rem',
       fontSize: '1.2rem',
     },
-    '@media screen and (min-width:890px)': {
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '2rem',
       lineHeight: '3rem',
     },
@@ -106,9 +107,12 @@ export default {
   },
   weights: 400,
   css: {
-    fontSize: '100%',
     textAlign: 'center',
-    '@media screen and (min-width:640px)': {
+    fontSize: '90%',
+    '@media screen and (min-width:480px) and (min-height: 270px)': {
+      fontSize: '120%',
+    },
+    '@media screen and (min-width:1020px) and (min-height: 830px)': {
       fontSize: '200%',
     }
   },

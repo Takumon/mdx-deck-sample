@@ -14,9 +14,12 @@ const Wrapper = styled.main`
   pre {
     max-width: 90vw;
     max-height: 80vh;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 
-    @media screen and (min-width:480px) and (min-height: 270px) {
+    @media screen and (min-width:480px) and (min-height: 400px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (min-width:640px) and (min-height: 500px) {
       font-size: 1rem;
     }
     @media screen and (min-width:1020px) and (min-height: 830px) {

@@ -5,7 +5,16 @@ import Theme from './theme'
 import IFRAME from './iframe'
 import Counter from './counter'
 import Sm from './sm'
+import Avatar from './Avatar'
 
-export { BGImage, LayoutMarkdown, LayoutAlignCenter, IFRAME, Counter, Sm }
+export {
+    BGImage,
+    LayoutMarkdown,
+    LayoutAlignCenter,
+    IFRAME,
+    Counter,
+    Sm,
+    Avatar,
+}
 
 export default Theme

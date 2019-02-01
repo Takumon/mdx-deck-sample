@@ -1,6 +1,6 @@
 export { default as theme } from './components/theme'
-import { Appear, Head, Notes, Image} from 'mdx-deck'
-import { Invert, Split, FullScreenCode, Horizontal} from 'mdx-deck/layouts'
+import { Appear, Head, Notes, Image } from 'mdx-deck'
+import { Invert, Split, FullScreenCode } from 'mdx-deck/layouts'
 import { CodeSurfer } from 'mdx-deck-code-surfer'
 import nightOwl from 'prism-react-renderer/themes/nightOwl'
 import Box from 'superbox'
@@ -12,17 +12,18 @@ import {
   LayoutAlignCenter,
   IFRAME,
   Sm,
+  Avatar,
 } from './components'
 
 
 <Head>
-  <title>mdx-deckとcode-surferでスライドを作ろう！ #WEBエンジニア勉強会11</title>
+  <title>MDX-DeckとCode Surferでスライドを作ろう！ #WEBエンジニア勉強会11</title>
 </Head>
 
 
 <h1>
-  <span>MDX-DECK</span><Sm>と</Sm><span>Code-Surfer</span><Sm>で</Sm><br/>
-  <span>スライドを作ろう！</span>
+  <span>MDX-Deck</span><Sm>と</Sm><span>Code Surfer</span><Sm>で</Sm><br/>
+  <span>スライド<Sm>を</Sm>作ろう！</span>
 </h1>
 
 <hr/>
@@ -38,18 +39,9 @@ import {
 ---
 export default LayoutAlignCenter
 
-### 自己紹介
-<hr/>
+## 自己紹介
 
-<img src="./images/avater.jpg" alt="たくもんのアイコン" style={{
-  borderRadius: '50%',
-  width: '13rem',
-  height: '13rem',
-  margin: '1rem',
-  float: 'left',
-  display: 'block',
-}} />
-
+<Avatar />
 
 * 名前：たくもん（[@inouetakumon](https://twitter.com/inouetakumon)）
 * 仕事：SIer
@@ -96,12 +88,25 @@ export default Invert
 <br/>
 
 
-<img src="./images/mdx-deck-logo.png" style={{maxHeight:'60vh', maxWidth: '60vw',  objectFit: 'contain'}}/>
+<img src="./images/mdx-deck-logo.png" style={{maxHeight:'50vh', maxWidth: '50vw',  objectFit: 'contain'}}/>
 
 <br/>
 
 # いかがでしょうか！
 
+---
+
+export default Invert
+
+# このスライドも
+
+<br/>
+
+# MDX-Deck
+
+<br/>
+
+# 使ってます✨
 
 ---
 export default LayoutAlignCenter
@@ -111,22 +116,32 @@ export default LayoutAlignCenter
 <img src="./images/mdx-deck-demo.gif" style={{maxHeight:'80vh', maxWidth: '90vw',  objectFit: 'contain'}}/>
 
 ---
+
 export default LayoutMarkdown
 
-##  MDX-DECKとは
+## 🤔 MDXとは
+
+1. MarkdownとJSXの記法を組み合わせた技術
+1. マークダウンファイルの中にReactコンポーネントが書ける！
+
+
+---
+export default LayoutMarkdown
+
+## 🤔 MDX-DECKとは
 
 1. [MDX](https://github.com/mdx-js/mdx)ベースのスライド作成用Node.jsライブラリ
-1.  設定ファイルなしでMDXファイルだけでスライドが作れる
-1. MDXはMarkdownにJSXを書けるようにしたもの
-1. Reactコンポーネントの力を借りてリッチなスライドが作れる
-1. 強力なソースコードプレビュー用プラグイン(Code-Surfer)が用意されている
+1. めんどくさい設定不要
+1. MDXファイルだけでスライドが作れる
+1. Reactコンポーネントでリッチなスライドが作れる
+1. リッチなソースコードプレビューが可能なプラグイン(Code Surfer)がある
 
 
 ---
 
 export default LayoutMarkdown
 
-## [MDX](https://github.com/mdx-js/mdx)ファイル１つ作ればスライドが完成
+## 始め方も簡単！<br/> [MDX](https://github.com/mdx-js/mdx)ファイル１つでスライド完成！
 
 1. npm i -D mdx-deck
 1. MDXファイル作成
@@ -153,7 +168,6 @@ export default LayoutAlignCenter
     { notes: ''},
   ]}  
 />
-
 
 
 ---
@@ -186,11 +200,9 @@ export default LayoutMarkdown
 
 1. 画像の全画面表示
 1. 左右分割レイアウト
-1. 横並びレイアウト
 1. 色反転レイアウト
 1. ソースコードの全画面表示
 1. アニメーション
-1. メタ情報埋め込み
 ---
 
 export default LayoutAlignCenter
@@ -242,38 +254,6 @@ export default Split
 
 
 
----
-
-export default LayoutAlignCenter
-
-### `Horizontal`：横並びレイアウト
-
-```jsx
-import { Horizontal} from 'mdx-deck/layouts'
-export default Horizontal
-
-![images/sample-background.jpg](./images/sample-background.jpg)
-
-![images/mdx-deck-background.png](./images/mdx-deck-background.png)
-
-### どんどん横に並んでいく
-
-```
-
-#### プレビューは次ページ:arrow_right:
-
-
----
-export default Horizontal
-
-![images/sample-background.jpg](./images/sample-background.jpg)
-
-![images/mdx-deck-background.png](./images/mdx-deck-background.png)
-
-## どんどん横に並んでいく
-
-
-
 
 ---
 
@@ -282,7 +262,7 @@ export default LayoutAlignCenter
 ### `Invert`：色反転レイアウト
 
 ```jsx
-import { Invert} from 'mdx-deck/layouts'
+import { Invert } from 'mdx-deck/layouts'
 export default Invert
 
 ## 色反転レイアウト
@@ -381,22 +361,6 @@ import { Appear } from 'mdx-deck'
 
 
 
----
-
-### `Head`：メタ情報埋め込み
-
-```jsx
-import { Head } from 'mdx-deck'
-<Head>
-  <title>mdx-deckとcode-surferでスライドを作ろう！</title>
-</Head>
-```
-
-#### プレビューは次ページ:arrow_right:
-
----
-
-![head-preview](./images/head-preview.png)
 
 ---
 export default LayoutMarkdown
@@ -417,45 +381,40 @@ export default LayoutMarkdown
 発表時の話の要点をここに書いたりしてチラ見できます。
 ```
 
-
 ---
-export default LayoutAlignCenter
+export default Invert
 
-## 🔧 自作Reactコンポーネントも埋め込める
-
-* よく使う部品やアニメーションをコンポーネント化して再利用できる
-
-<Counter />
+# MDX-DECKプラグインのご紹介
 
 
 ---
 export default Invert
 
-# MDX-DECKのプラグインのご紹介
+# ソースコードプレビューを
 
 <br/>
 
-<img src="./images/code-surfer-logo.png" style={{maxHeight:'60vh', maxWidth: '60vw',  objectFit: 'contain'}}/>
+<img src="./images/code-surfer-logo.png" style={{maxHeight:'50vh', maxWidth: '50vw',  objectFit: 'contain'}}/>
 
 <br/>
 
-# 
+# リッチにするプラグイン✨
 
 ---
 export default LayoutMarkdown
 
-##  <🏄/> Code-Surferとは
+##  <🏄/> Code Surferとは
 
 * MDX-DECKのプラグイン
 * ソースコードプレビューをリッチにしてくれる
-* 大量のコードでもズーム＆スクロールなどのアニメーションができる
-* アニメーションごとに説明文が設定できる
+* 指定行のズーム＆ハイライトといったアニメーションが実現できる
+* アニメーションごとに説明文を設けられる
 
 
 ---
 
 <CodeSurfer
-  title={()=>(<h3>Code-Surferデモでできること</h3>)}
+  title={()=>(<h3>Code-Surferでできること</h3>)}
   code={require("!raw-loader!./snippets/my-snippet.js")}
   showNumbers={true}
   theme={nightOwl}
@@ -502,8 +461,8 @@ export default LayoutMarkdown
 
 ### ✨ Good !!
 * 簡単なスライドはMDXファイル１つで作れる
-* 良く使うデザインはReactコンポーネントとして共通化できる
-* 全資産をNode.jsで管理できる
+* 良く使うデザイン、アニメーションはReactコンポーネントとして共通化できる
+* テーマのCSSやスライドを動かすJavaScriptをnpmで管理できるので<br/>Gitに上げる資産が少なくて済む
 
 ### 🤔 Uhnnn...
 * 凝ったデザインにするにはテーマの調整（CSS）が必要
@@ -515,16 +474,36 @@ export default LayoutMarkdown
 
 ## 👨‍👩‍👦‍👦  まとめ
 
-### 📓 MDX-DECK
+### 📓 MDX-Deck
+* Node.js製スライド作成ツール
 * MDXファイルを作るだけで簡単にスライドが作成できる
 * プレゼンテーション機能が一通りそろっている
-* Reactコンポーネントの恩恵を受けられる
+* Reactコンポーネントでリッチなスライドが作れる
 
-### 🏄 CODE-SURFER
-* MDX-DECKのプラグイン
+### 🏄 Code Surfer
+* MDX-Deckのプラグイン
 * ソースコードプレビューをリッチにしてくれる
 
 ---
+
+export default LayoutMarkdown
+
+### MDX-Deckは...
+
+* まだまだ新しいライブラリ
+* [2系でいろんな機能が追加予定](https://github.com/jxnblk/mdx-deck/issues/177)
+* プラグインも3つだけど、もっと増えるはず！
+
+---
+
+export default Invert
+
+<h1>
+  <span>MDX-Deck</span><Sm>と</Sm><span>Code Surfer</span><Sm>で</Sm><br/>
+  <span>スライド<Sm>を</Sm>作ってみませんか</span>
+</h1>
+---
+
 
 # :tomato:おしまい:tomato:
 
